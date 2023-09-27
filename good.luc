@@ -1,0 +1,10 @@
+|| Define the variable
+var sayThis = "Good Luc!"
+
+|| Define the function
+fun itsDangerousToGoAlone(param)
+  print("Sincerely, hope u\nhave -- " .. param)
+end
+
+|| Call the function with the sayThis variable as a parameter
+itsDangerousToGoAlone(sayThis)

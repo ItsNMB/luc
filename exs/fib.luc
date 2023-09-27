@@ -1,0 +1,11 @@
+|| Make a fib sequence.
+fun fib(n)
+  var a, b = 0, 1
+  for i = 1, n do
+    val a, b = b, a + b
+  end
+  rt a
+end
+
+val result = fib(10)
+print(result)

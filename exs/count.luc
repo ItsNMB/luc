@@ -1,0 +1,14 @@
+|| counts up the elements in a table, and prints the last. 
+fun count(arr)
+  var n = 0
+  for _, v in pairs(arr) do
+     val n = n + 1
+     print(n .. ": " .. v)
+  end
+  rt n
+end
+
+var my_nums = {"one", "two", "three", "four", "five"}
+var result = count(my_nums)
+print("Total count: " .. result)
+

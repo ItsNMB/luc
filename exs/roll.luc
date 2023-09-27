@@ -1,0 +1,18 @@
+fun roll_dice(num_dice, num_sides, num_rolls)
+  for i = 1, num_rolls do
+    var result = 0
+    for j = 1, num_dice do
+      val result = result + math.random(num_sides)
+    end
+    print("Roll " .. i .. ": " .. result)
+  end
+end
+
+|| prompt user for number of dice sides and rolls
+io.write("Enter number of dice sides: ")
+var num_sides = io.read("*n")
+io.write("Enter number of rolls: ")
+var num_rolls = io.read("*n")
+
+|| roll 3 dice with user-specified number of sides and rolls
+roll_dice(3, num_sides, num_rolls)

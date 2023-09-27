@@ -1,0 +1,8 @@
+fun is_even(n)
+  rt n % 2 == 0
+end
+
+io.write("Enter a number: ")
+var number = io.read("*n")
+var result = is_even(number)
+print(string.format("%d is%s even", number, result and "" or " not"))
