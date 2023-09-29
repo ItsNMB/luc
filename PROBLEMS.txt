@@ -1,0 +1,10 @@
+
+local a = 2
+a += 1
+print(a)
+
+---------------
+
+local = local - 1
+a = a - 1
+print = print - 1
